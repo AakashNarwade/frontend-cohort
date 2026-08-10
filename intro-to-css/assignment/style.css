@@ -37,27 +37,27 @@ body {
   align-items: center;
 }
 
-.card1-container img {
+.card1-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
 }
 
-.card1-container h1 {
+.card1-heading {
   margin-top: 15px;
   font-size: 26px;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
 
-.card1-container p {
+.card1-para {
   text-align: center;
   font-size: medium;
   padding: 10px 0;
   color: #646363;
 }
 
-.card1-container input {
+.card1-input {
   padding: 10px;
   border-radius: 5px;
   width: 200px;
@@ -65,7 +65,7 @@ body {
   box-shadow: inset 0 0 0 1px #5f5fd3;
 }
 
-.card1-container button {
+.card1-btn {
   padding: 10px 5px;
   background-color: #5f5fd3;
   border-radius: 5px;
