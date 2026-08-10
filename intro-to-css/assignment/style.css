@@ -23,7 +23,9 @@ body {
 
 /* card1 */
 
-.card1-container {
+.card1-container,
+.card2-container,
+.card3-container {
   /* border: 1px solid black; */
   border-radius: 20px;
   margin: 40px auto;
@@ -43,17 +45,30 @@ body {
   object-fit: cover;
 }
 
-.card1-heading {
+.card1-heading,
+.card2-heading,
+.card3-heading {
   margin-top: 15px;
   font-size: 26px;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
 
-.card1-para {
+.card1-para,
+.card2-para,
+.card3-para {
   text-align: center;
   font-size: medium;
-  padding: 10px 0;
+  padding: 10px 10px;
+  color: #646363;
+}
+
+.card3-note {
+  min-width: 90%;
+  margin: 0 20px;
+  /* text-align: center; */
+  font-size: 13px;
+  padding: 10px;
   color: #646363;
 }
 
@@ -90,4 +105,24 @@ body {
 .btn a {
   text-decoration: none;
   color: white;
+}
+.card2-container h2 {
+  font-size: 40px;
+}
+.card2-work-div,
+.card3-newnumber-div {
+  border-radius: 10px;
+  min-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #f7eeee;
+}
+
+.card2-home-div,
+.card3-existingnum-div {
+  margin-top: 15px;
+  width: 90%;
+  padding: 5px 10px;
 }
