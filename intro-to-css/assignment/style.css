@@ -21,16 +21,13 @@ body {
   height: 100vh;
 }
 
-/* card1 */
-
 .card1-container,
 .card2-container,
 .card3-container,
-.card4-container {
-  /* border: 1px solid black; */
+.card4-container,
+.card5-container {
   border-radius: 20px;
   margin: 40px auto;
-  /* height: 100vh; */
   height: 600px;
   width: 400px;
   display: flex;
@@ -40,6 +37,12 @@ body {
   align-items: center;
 }
 
+.card2-container h2,
+.card3-container h2,
+.card4-container h2,
+.card5-container h2 {
+  font-size: 50px;
+}
 .card1-img {
   width: 200px;
   height: 200px;
@@ -49,7 +52,8 @@ body {
 .card1-heading,
 .card2-heading,
 .card3-heading,
-.card4-heading {
+.card4-heading,
+.card5-heading {
   margin-top: 15px;
   font-size: 26px;
   font-family: "Courier New", Courier, monospace;
@@ -109,9 +113,7 @@ body {
   text-decoration: none;
   color: white;
 }
-.card2-container h2 {
-  font-size: 40px;
-}
+
 .card2-work-div,
 .card3-newnumber-div {
   border-radius: 10px;
@@ -186,4 +188,36 @@ body {
   font-size: 14px;
   pointer-events: none;
   user-select: none;
+}
+
+.card5-form {
+  width: 90%;
+}
+.card5-form label:first-child {
+  color: #540c98;
+  font-size: 12px;
+  /* border: 2px solid #540c98; */
+}
+
+.card5-form input {
+  border: 2px solid #540c98;
+}
+
+/* Target your company name input */
+.card5-form input:focus {
+  outline: none;
+}
+
+.card5-form label {
+  font-size: 12px;
+  color: #646363;
+
+  padding: 15px 0px;
+}
+.card5-form input,
+.card5-form select {
+  min-width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
 }
