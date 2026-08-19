@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+/* Header & Navigation */
+.header {
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.primary-btn {
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  background-color: #0095f6;
+  color: white;
+  cursor: pointer;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  color: #0095f6;
+  padding: 7px 16px;
+  cursor: pointer;
+}
+
+/* Main Layout Container */
+.container {
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  flex-shrink: 0;
+}
+
+.icon .image {
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.profile-heading {
+  font-weight: 400;
+  color: #000;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.follow {
+  display: flex;
+  gap: 30px;
+  margin: 15px 0;
+}
+
+.follow h3 {
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+}
+
+.follow h3 span {
+  color: #737373;
+  font-weight: 400;
+}
+
+.profile-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.profile-thread {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  background-color: #efefef;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.help-text {
+  font-size: 14px;
+  color: #000;
+}
+
+.bio-link {
+  color: #00376b;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+/* Stories / Highlights */
+.stories {
+  margin-bottom: 30px;
+}
+
+.story-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+}
+
+.story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #dbdbdb;
+  padding: 3px;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.story-wrapper p {
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 165px;
+}
+
+.tab {
+  padding: 15px 0;
+  cursor: pointer;
+  color: #737373;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs > div:first-child {
+  border-bottom: 5px solid black;
+  width: 45px;
+  text-align: center;
+}
+
+/* Post Cards Layout */
+.card-container {
+  width: 975px;
+  /* width: 100%; */
+  /* margin-top: 10px; */
+}
+
+.cards {
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 310px;
+  height: 414px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Accounts Carousel */
+.accounts-container {
+  margin: 20px 0;
+}
+.accounts-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accounts-block h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.accounts-block p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(65, 80, 247);
+}
+
+/* .accounts-container h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #737373;
+  margin-bottom: 16px;
+} */
+
+.accounts-list {
+  margin: 20px 0;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.account-card {
+  border: 1px solid #dbdbdb;
+  min-width: 180px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.account-img-wrapper {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.account-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.account-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.account-card p {
+  color: #737373;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.account-card button {
+  font-weight: 600;
+  color: white;
+  background-color: #0095f6;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 6px 24px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* footer section */
+
+.footer-section {
+  margin-top: 40px;
+  /* margin: 40px 0; */
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  color: #737373;
+}
+
+.copyrights p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #737373;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.copyrights p span select {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.copyrights p span select {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #737373;
+  cursor: pointer;
+}
