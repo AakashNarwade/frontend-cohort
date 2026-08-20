@@ -213,20 +213,28 @@
 /* Post Cards Layout */
 .card-container {
   width: 975px;
-  /* width: 100%; */
-  /* margin-top: 10px; */
 }
 
 .cards {
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
-  gap: 10px;
+  gap: 2px;
   flex-wrap: wrap;
 }
 
 .card {
   width: 310px;
   height: 414px;
+}
+
+.card {
+  position: relative;
+}
+
+.reel-svg {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .card img {
